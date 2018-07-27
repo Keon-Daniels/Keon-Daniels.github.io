@@ -1,0 +1,85 @@
+/* The first several elements that are styled are really just for the purpose of having */
+      /* Border-box sizing, Default to a sans-serif font throughout */
+      *, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } html { font-family: sans-serif; }
+
+      /* Black background color */
+      body {
+        background-image: url("https://i.giphy.com/media/EsDCYBUQM0KlO/giphy.web");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        }
+
+      /* put everything inside a wrapper so  */
+      #wrapper {
+        width: 800px;
+        max-width: 90%;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin-top: 0;
+        min-height: 100vh;
+      }
+
+      .row {
+        padding-top: 25px;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .item {
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgb(127, 255, 212);
+        padding: 10px;
+        margin: 20px;
+        transition: 0.2s;
+      }
+
+      .taco {
+        font-size: 100px;
+      }
+
+      .active {
+        box-shadow: 10px 10px 10px black;
+      }
+      .transform{
+        transform: rotate(360deg);
+      }
+      .grow{
+        transform: scale(1.5);
+      }
+      .button{
+        color:white;
+        font-size:45px;
+        
+      }
+      .hidden{
+        display:none;
+      }
+      #result{
+        color:black;
+      }
+      .hide{
+        opacity: 0;
+      }
+      h1 {
+        color: red;
+        text-align: center;
+      }
+      .row {
+        color: white;
+      }
+      #instructions{
+        color: black;
+        text-align: center;
+      }
+      #press{
+        background-color:red;
+      }
+      h2 {
+        color:rgb(107, 142, 35);
+      }
+      #result{
+        font-size: 50px;
+      }
