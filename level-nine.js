@@ -98,7 +98,7 @@ tacobutton.addEventListener('click', e => {
             newButton.classList.remove('hidden')
         }
         else if (counter == 0) {
-            results.innerHTML = "Game Over"
+            results.innerHTML = "Game Over 🤣"
         }
 
 
