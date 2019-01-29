@@ -12,11 +12,14 @@ let taco3 = document.querySelector('#taco3')
 let taco4 = document.querySelector('#taco4')
 let taco5 = document.querySelector('#taco5')
 let instructions = document.querySelector('#instructions')
+let title = document.querySelector('#title')
+
 
 function taco_5 (taco) {
-window.onload = taco_5(taco5)
     taco.classList.add('hidden')
 }
+window.onload = taco_5(taco5)
+window.onload = taco_5(taco2)
 
 taco1.addEventListener('mouseover', (e) => {
     taco3.classList.add('active')
@@ -32,15 +35,19 @@ taco2.addEventListener('mouseover', (e) => {
 
 taco3.addEventListener('mouseover', (e) => {
     taco2.classList.add('active')
-    taco2.classList.toggle('hidden')
+    taco2.classList.add('hidden')
 })
 
 taco4.addEventListener('mouseover', (e) => {
     taco4.classList.add('hidden')
 })
 
-instructions.addEventListener('click', (e) => {
+instructions.addEventListener('mouseover', (e) => {
     taco5.classList.remove('hidden')
+})
+
+title.addEventListener('click', (e) => {
+    taco2.classList.remove('hidden')
 })
 
 tacobutton.addEventListener('click', e => {

@@ -69,4 +69,5 @@ tacoButton.addEventListener('click', (e) => {
     console.log(`You have pressed the button ${counter} times!`)
     result.classList.remove('hidden')
     result.innerHTML= `You have pressed the button ${counter} times!`
+    
 })
