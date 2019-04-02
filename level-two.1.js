@@ -21,25 +21,25 @@ taco1.addEventListener('click', (e) => {
 taco2.addEventListener('click', (e) => {
     taco3.classList.toggle('hidden')
 })
-tacobutton.addEventListener('click', e=> {
-    counter=0
+tacobutton.addEventListener('click', e => {
+    counter = 0
     results.classList.remove('hidden');
-    tacos.forEach(taco =>{
-        if (taco.classList.contains('active')){
-            counter ++ 
+    tacos.forEach(taco => {
+        if (taco.classList.contains('active')) {
+            counter++
         }
-       
-        results.innerHTML=`Tienes ${counter} tacos resaltado.`
+
+        results.innerHTML = `You have ${counter} tacos selected`
     })
-    
-    tacos.forEach(taco =>{
-        if(counter == 3){
+
+    tacos.forEach(taco => {
+        if (counter == 3) {
             taco.classList.add('hide')
-            results.innerHTML = "¡Has ganado!"
+            results.innerHTML = "You Win!"
             newButton.classList.remove('hidden')
-            
+
         }
-        else{
+        else {
             taco.classList.remove('hide')
             newButton.classList.add('hidden')
         }

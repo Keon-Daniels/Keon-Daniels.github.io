@@ -14,19 +14,20 @@ tacos.forEach(taco=>{
 })
 
 tacobutton.addEventListener('click', e=> {
-counter=0
-results.classList.remove('hidden');
+    counter=0
+    results.classList.remove('hidden');
     tacos.forEach(taco =>{
         if (taco.classList.contains('active')){
             counter ++ 
         }
        
-        results.innerHTML=`You have ${counter} tacos selected`
+        results.innerHTML=`Tienes ${counter} tacos resaltado.`
     })
+    
     tacos.forEach(taco =>{
         if(counter == 3){
             taco.classList.add('hide')
-            results.innerHTML = "You Win!"
+            results.innerHTML = "¡Has ganado!"
             newButton.classList.remove('hidden')
             
         }

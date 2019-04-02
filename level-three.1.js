@@ -15,20 +15,25 @@ tacos.forEach(taco => {
         taco.classList.toggle('active')
     })
 })
-taco1.addEventListener('click', (e) => {
-    taco3.classList.toggle('hidden')
+taco1.addEventListener('click', e=>{
+    taco1.classList.add('hidden')
 })
-taco2.addEventListener('click', (e) => {
-    taco3.classList.toggle('hidden')
+taco3.addEventListener('click', e=>{
+    taco1.classList.remove('hidden')
+    taco2.classList.toggle('hidden')
 })
-tacobutton.addEventListener('click', e=> {
-    counter=0
+taco2.addEventListener('click', e=>{
+    taco3.classList.add('active')
+})
+
+tacobutton.addEventListener('click', e => {
+    counter = 0
     results.classList.remove('hidden');
-    tacos.forEach(taco =>{
-        if (taco.classList.contains('active')){
-            counter ++ 
+    tacos.forEach(taco => {
+        if (taco.classList.contains('active') && !(taco.classList.contains('hidden'))) {
+            counter++
         }
-       
+
         results.innerHTML=`Tienes ${counter} tacos resaltado.`
     })
     
