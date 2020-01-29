@@ -29,7 +29,7 @@ tacobutton.addEventListener('click', e=> {
             counter ++ 
         }
        
-        results.innerHTML=`Tienes ${counter} tacos resaltado.`
+        results.innerHTML=`You have ${counter} tacos highlighted.`
     })
     
     tacos.forEach(taco =>{
