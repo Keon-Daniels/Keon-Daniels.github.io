@@ -15,37 +15,38 @@ let taco6 = document.querySelector('#taco6')
 
 
 taco1.addEventListener('click', e => {
-    taco5.classList.toggle('active')
-    taco3.classList.add('hidden')
-    taco4.classList.toggle('hidden')
+    taco1.classList.add('hidden')
+    taco6.classList.add('hidden')
+    taco2.classList.add('active')
 })
 
 taco2.addEventListener('click', (e) => {
-    taco3.classList.toggle('active')
-    taco4.classList.add('hidden')
+    taco3.classList.toggle('hidden')
+    taco4.classList.toggle('active')
+    taco2.classList.add('active')
 })
 
 taco3.addEventListener('click', (e) => {
-    taco6.classList.toggle('active')
-    taco5.classList.add('hidden')
+    taco1.classList.remove('hidden')
+    taco2.classList.add('hidden')
 })
 
 taco4.addEventListener('click', (e) => {
     taco1.classList.toggle('active')
-    taco3.classList.remove('hidden')
+    taco6.classList.remove('hidden')
+    taco3.classList.toggle('active')
 })
 
 taco5.addEventListener('click', (e) => {
-    taco2.classList.toggle('active')
     taco1.classList.remove('hidden')
+    taco6.classList.toggle('active')
 })
 
 taco6.addEventListener('click', (e) => {
-    taco4.classList.toggle('active')
-    taco1.classList.add('hidden')
-    taco5.classList.remove('hidden')
+    taco5.classList.toggle('active')
+    taco4.classList.add('active')
+    taco2.classList.remove('hidden')
 })
-
 tacobutton.addEventListener('click', e => {
     counter = 0
     results.classList.remove('hidden');
